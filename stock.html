@@ -581,7 +581,7 @@ function renderStock(){
       const j = getJoursRestants(ing);
       const recettes = RECETTES_INGS[ing.nom] || [];
       const color = j < 0 ? 'var(--red)' : j === 0 ? 'var(--orange)' : 'var(--orange)';
-      const label = j < 0 ? 'PÉRIMÉ' : j === 0 ? 'Aujourd'hui !' : `${j}j restant${j>1?'s':''}`;
+      const label = j < 0 ? 'PÉRIMÉ' : j === 0 ? 'Auj. !' : `${j}j restant${j>1?'s':''}`;
       html += `<div class="ing-card" style="border-color:${color}">
         <div class="card-row">
           <div class="card-info">
